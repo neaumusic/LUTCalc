@@ -33,7 +33,7 @@ TWKKnee.prototype.io = function() {
 	// Sliders
 	this.startS = new lutSlider({
 		min: -5,
-		max: this.max,
+		max: 8,
 		value: 0.05,
 		step: 0.05,
 		title: 'Knee Start Level',

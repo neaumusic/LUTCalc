@@ -1738,13 +1738,7 @@ LUTGamma.prototype.setKnee = function(params) {
 		if (typeof p.legal === 'boolean') {
 			legal = p.legal;
 		}
-		var max = false;
-		for (var j=8; j>0; j -= 0.1) {
-			if (this.f(j) <= 0.95) {
-				max = j;
-				break;
-			}
-		}
+		var max = 8;
 		out.max = max;
 		if (typeof p.smoothness === 'number') {
 			this.kSmooth = p.smoothness;
